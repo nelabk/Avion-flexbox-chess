@@ -1,0 +1,51 @@
+:root {
+    --square-size: calc(100vmin / 8.5);
+    --icon-size: calc(var(--square-size)*0.7);
+    --icon-padding: calc(var(--square-size)*0.1);
+}
+
+body {
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   min-height: 100vh;
+   margin: 0;
+}
+
+.box {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    height: var(--square-size);
+    width: var(--square-size);
+}
+
+.row:nth-child(odd) .square:nth-child(even) {
+    background-color: #a47963;
+}
+
+.row:nth-child(even) .square:nth-child(odd) {
+    background-color: #a47963;
+}
+
+.row:nth-child(even) .square:nth-child(even) {
+    background-color: #d8b4a0;
+}
+
+.row:nth-child(odd) .square:nth-child(odd) {
+    background-color: #d8b4a0;
+}
+
+.square i {
+    font-size: var(--icon-size);
+    padding: var(--icon-padding);
+}
