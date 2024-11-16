@@ -11,11 +11,11 @@
 }
 
 body {
-   overflow: hidden;
    display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
+   overflow: hidden;
 }
 
 .box {
@@ -50,6 +50,7 @@ body {
 }
 
 .square i {
+    display: block;
     font-size: var(--icon-size);
     padding: var(--icon-padding);
 }
